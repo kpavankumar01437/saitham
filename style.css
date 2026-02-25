@@ -1,0 +1,9 @@
+html, body {
+  touch-action: manipulation;
+}
+
+/* This is called by JavaScript when you lose */
+.game-over {
+  background-color: red !important;
+  opacity: 0.8;
+}
