@@ -18,7 +18,7 @@
   }
 
   function flashButton(color) {
-    const btn = document.querySelector(`[data-color="${color}"]`);
+    const btn = document.getElementById(color);
     if (!btn) return;
 
     btn.classList.add(
@@ -83,7 +83,7 @@
   function handleUserClick(e) {
     if (!started || playingSeq) return;
 
-    const color = e.currentTarget.dataset.color;
+    const color = e.currentTarget.id;
     userSequence.push(color);
     flashButton(color);
 
